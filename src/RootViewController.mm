@@ -94,6 +94,7 @@
 - (void)refreshResourceList:(id)sender;
 {
 	self.products = [[self resourceClass] findAll:nil];
+	[self.tableView reloadData];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
