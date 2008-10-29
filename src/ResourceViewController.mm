@@ -80,11 +80,11 @@
 	NSString* attributeName   = [self.resource.interestingAttributeNames objectAtIndex:indexPath.section];
 	id value                  = [self.resource.attributes objectForKey:attributeName];
 	UITableViewCell* cell     = nil;
-	ARSAttributeType attrType = [resource typeForAttribute:attributeName];
+	ORAttributeType attrType = [resource typeForAttribute:attributeName];
 
 	switch(attrType)
 	{
-	case kARSAttributeTypeHTMLText:
+	case kORAttributeTypeHTMLText:
 		{
 			static NSString* CellIdentifier = @"WebViewCell";
 
@@ -106,7 +106,7 @@
 			[[[cell.contentView subviews] objectAtIndex:1] loadHTMLString:[NSString stringWithFormat:@"<body style=\"background-color: transparent;\">%@</body>", value] baseURL:nil];
 		}
 		break;
-	case kARSAttributeTypeBoolean:
+	case kORAttributeTypeBoolean:
 		{
 			static NSString* CellIdentifier = @"BooleanCell";
 
