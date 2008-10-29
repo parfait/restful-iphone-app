@@ -1,0 +1,3 @@
+[submodule "ext/ObjectiveResource"]
+	path = ext/ObjectiveResource
+	url = git@github.com:parfait/objectiveresource.git
