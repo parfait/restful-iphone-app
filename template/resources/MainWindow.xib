@@ -53,7 +53,7 @@
 							<reference key="IBUINavigationBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="701001926"/>
-						<string key="IBUINibName">ResourceListController</string>
+						<string key="IBUINibName">RESOURCE_NAMEListController</string>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 					</object>
 				</object>
@@ -175,7 +175,7 @@
 					<string>UIApplication</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>ResourceListController</string>
+					<string>RESOURCE_NAMEListController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSMutableDictionary">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -220,7 +220,7 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">ResourceListController</string>
+					<string key="className">RESOURCE_NAMEListController</string>
 					<string key="superclassName">UITableViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>

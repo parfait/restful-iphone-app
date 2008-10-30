@@ -2,23 +2,6 @@
 #import "ParfaitAppDelegate.h"
 #import "ResourceViewController.h"
 
-@interface Product : ObjectiveResource
-@end
-
-@implementation Product
-+ (NSString*)baseURL  { return @"http://caboose:monkeyballs@localhost:3000"; }
-
-/*
-- (NSArray*)interestingAttributeNames
-{
-	NSMutableArray* names = [[[super interestingAttributeNames] mutableCopy] autorelease];
-	[names removeObject:@"created_at"];
-	[names removeObject:@"updated_at"];
-	return names;
-}
-*/
-@end
-
 @interface ResourceListController ()
 @property (retain) ResourceViewController* showController;
 @property (retain) NSArray* products;
@@ -34,7 +17,8 @@
 
 - (Class)resourceClass;
 {
-	return [Product class];
+	@throw [NSException exceptionWithName:@"NoResourceClass" reason:@"You must specify a resource class by subclassing -resourceClass." userInfo:nil];
+	return nil;
 }
 
 @synthesize showController, products;
