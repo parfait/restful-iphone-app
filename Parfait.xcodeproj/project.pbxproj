@@ -28,6 +28,7 @@
 		910B9D0C0EB8CE04009E4C0E /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D080EB8CE04009E4C0E /* RootViewController.mm */; };
 		910B9D120EB8CE0D009E4C0E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910B9D0F0EB8CE0D009E4C0E /* MainWindow.xib */; };
 		910B9D130EB8CE0D009E4C0E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910B9D100EB8CE0D009E4C0E /* RootViewController.xib */; };
+		910B9E9A0EB9BA7F009E4C0E /* ConnectionErrors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9E990EB9BA7F009E4C0E /* ConnectionErrors.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,8 @@
 		910B9D0E0EB8CE0D009E4C0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		910B9D0F0EB8CE0D009E4C0E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		910B9D100EB8CE0D009E4C0E /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		910B9E980EB9BA7F009E4C0E /* ConnectionErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionErrors.h; sourceTree = "<group>"; };
+		910B9E990EB9BA7F009E4C0E /* ConnectionErrors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionErrors.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				910B9BFF0EB8CAC8009E4C0E /* Base.mm */,
 				910B9C000EB8CAC8009E4C0E /* Connection.h */,
 				910B9C010EB8CAC8009E4C0E /* Connection.mm */,
+				910B9E980EB9BA7F009E4C0E /* ConnectionErrors.h */,
+				910B9E990EB9BA7F009E4C0E /* ConnectionErrors.mm */,
 				910B9C020EB8CAC8009E4C0E /* formats */,
 				910B9C050EB8CAC8009E4C0E /* Formats.h */,
 				910B9C060EB8CAC8009E4C0E /* GlobalHeader.h */,
@@ -329,6 +334,7 @@
 				910B9D0A0EB8CE04009E4C0E /* ParfaitAppDelegate.mm in Sources */,
 				910B9D0B0EB8CE04009E4C0E /* ResourceViewController.mm in Sources */,
 				910B9D0C0EB8CE04009E4C0E /* RootViewController.mm in Sources */,
+				910B9E9A0EB9BA7F009E4C0E /* ConnectionErrors.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

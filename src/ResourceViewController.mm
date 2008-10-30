@@ -52,8 +52,21 @@
 
 - (void)refreshResource:(id)sender;
 {
-	[self.resource reload];
-	[self.tableView reloadData];
+	@try
+	{
+		[self.resource reload];
+		[self.tableView reloadData];
+	}
+	@catch(ORConnectionError* error)
+	{
+		UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Connection Error"
+                                                          message:@"Error connecting to resource"
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+		[alertView show];
+		[alertView release];
+	}
 }
 
 // =============

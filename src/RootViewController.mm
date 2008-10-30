@@ -93,8 +93,21 @@
 
 - (void)refreshResourceList:(id)sender;
 {
-	self.products = [[self resourceClass] findAll:nil];
-	[self.tableView reloadData];
+	@try
+	{
+		self.products = [[self resourceClass] findAll:nil];
+		[self.tableView reloadData];
+	}
+	@catch(ORConnectionError* error)
+	{
+		UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Connection Error"
+                                                          message:@"Error connecting to resource"
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+		[alertView show];
+		[alertView release];
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
