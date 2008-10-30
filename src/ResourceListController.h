@@ -2,7 +2,7 @@
 
 @class ResourceViewController;
 
-@interface RootViewController : UITableViewController
+@interface ResourceListController : UITableViewController
 {
 	ResourceViewController* showController;
 	NSArray* products;

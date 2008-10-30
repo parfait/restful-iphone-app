@@ -1,4 +1,4 @@
-#import "RootViewController.h"
+#import "ResourceListController.h"
 #import "ParfaitAppDelegate.h"
 #import "ResourceViewController.h"
 
@@ -19,12 +19,12 @@
 */
 @end
 
-@interface RootViewController ()
+@interface ResourceListController ()
 @property (retain) ResourceViewController* showController;
 @property (retain) NSArray* products;
 @end
 
-@implementation RootViewController
+@implementation ResourceListController
 - (void)dealloc
 {
 	self.showController = nil;

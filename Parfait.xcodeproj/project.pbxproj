@@ -25,9 +25,9 @@
 		910B9D090EB8CE04009E4C0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D010EB8CE04009E4C0E /* main.m */; };
 		910B9D0A0EB8CE04009E4C0E /* ParfaitAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D040EB8CE04009E4C0E /* ParfaitAppDelegate.mm */; };
 		910B9D0B0EB8CE04009E4C0E /* ResourceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D060EB8CE04009E4C0E /* ResourceViewController.mm */; };
-		910B9D0C0EB8CE04009E4C0E /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D080EB8CE04009E4C0E /* RootViewController.mm */; };
+		910B9D0C0EB8CE04009E4C0E /* ResourceListController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9D080EB8CE04009E4C0E /* ResourceListController.mm */; };
 		910B9D120EB8CE0D009E4C0E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910B9D0F0EB8CE0D009E4C0E /* MainWindow.xib */; };
-		910B9D130EB8CE0D009E4C0E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910B9D100EB8CE0D009E4C0E /* RootViewController.xib */; };
+		910B9D130EB8CE0D009E4C0E /* ResourceListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910B9D100EB8CE0D009E4C0E /* ResourceListController.xib */; };
 		910B9E9A0EB9BA7F009E4C0E /* ConnectionErrors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9E990EB9BA7F009E4C0E /* ConnectionErrors.mm */; };
 /* End PBXBuildFile section */
 
@@ -83,11 +83,11 @@
 		910B9D040EB8CE04009E4C0E /* ParfaitAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParfaitAppDelegate.mm; sourceTree = "<group>"; };
 		910B9D050EB8CE04009E4C0E /* ResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceViewController.h; sourceTree = "<group>"; };
 		910B9D060EB8CE04009E4C0E /* ResourceViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourceViewController.mm; sourceTree = "<group>"; };
-		910B9D070EB8CE04009E4C0E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		910B9D080EB8CE04009E4C0E /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		910B9D070EB8CE04009E4C0E /* ResourceListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceListController.h; sourceTree = "<group>"; };
+		910B9D080EB8CE04009E4C0E /* ResourceListController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourceListController.mm; sourceTree = "<group>"; };
 		910B9D0E0EB8CE0D009E4C0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		910B9D0F0EB8CE0D009E4C0E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		910B9D100EB8CE0D009E4C0E /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		910B9D100EB8CE0D009E4C0E /* ResourceListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourceListController.xib; sourceTree = "<group>"; };
 		910B9E980EB9BA7F009E4C0E /* ConnectionErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionErrors.h; sourceTree = "<group>"; };
 		910B9E990EB9BA7F009E4C0E /* ConnectionErrors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionErrors.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,8 +240,8 @@
 				910B9D040EB8CE04009E4C0E /* ParfaitAppDelegate.mm */,
 				910B9D050EB8CE04009E4C0E /* ResourceViewController.h */,
 				910B9D060EB8CE04009E4C0E /* ResourceViewController.mm */,
-				910B9D070EB8CE04009E4C0E /* RootViewController.h */,
-				910B9D080EB8CE04009E4C0E /* RootViewController.mm */,
+				910B9D070EB8CE04009E4C0E /* ResourceListController.h */,
+				910B9D080EB8CE04009E4C0E /* ResourceListController.mm */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 			children = (
 				910B9D0E0EB8CE0D009E4C0E /* Info.plist */,
 				910B9D0F0EB8CE0D009E4C0E /* MainWindow.xib */,
-				910B9D100EB8CE0D009E4C0E /* RootViewController.xib */,
+				910B9D100EB8CE0D009E4C0E /* ResourceListController.xib */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			files = (
 				910B9CB70EB8CAC9009E4C0E /* inflections.plist in Resources */,
 				910B9D120EB8CE0D009E4C0E /* MainWindow.xib in Resources */,
-				910B9D130EB8CE0D009E4C0E /* RootViewController.xib in Resources */,
+				910B9D130EB8CE0D009E4C0E /* ResourceListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +333,7 @@
 				910B9D090EB8CE04009E4C0E /* main.m in Sources */,
 				910B9D0A0EB8CE04009E4C0E /* ParfaitAppDelegate.mm in Sources */,
 				910B9D0B0EB8CE04009E4C0E /* ResourceViewController.mm in Sources */,
-				910B9D0C0EB8CE04009E4C0E /* RootViewController.mm in Sources */,
+				910B9D0C0EB8CE04009E4C0E /* ResourceListController.mm in Sources */,
 				910B9E9A0EB9BA7F009E4C0E /* ConnectionErrors.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

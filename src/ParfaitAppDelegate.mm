@@ -1,5 +1,5 @@
 #import "ParfaitAppDelegate.h"
-#import "RootViewController.h"
+#import "ResourceListController.h"
 
 
 @implementation ParfaitAppDelegate
