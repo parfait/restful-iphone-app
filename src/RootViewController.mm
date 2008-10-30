@@ -93,31 +93,11 @@
 
 - (void)refreshResourceList:(id)sender;
 {
-	@try
-	{
+	HANDLE_CONNECTION_EXCEPTIONS
+	(
 		self.products = [[self resourceClass] findAll:nil];
 		[self.tableView reloadData];
-	}
-	@catch(ORResourceNotFound* error)
-	{
-		UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Connection Error"
-                                                          message:@"Error connecting to resource"
-                                                         delegate:nil
-                                                cancelButtonTitle:@"OK"
-                                                otherButtonTitles:nil];
-		[alertView show];
-		[alertView release];
-	}
-	@catch(ORConnectionError* error)
-	{
-		UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Connection Error"
-                                                          message:[error reason]
-                                                         delegate:nil
-                                                cancelButtonTitle:@"OK"
-                                                otherButtonTitles:nil];
-		[alertView show];
-		[alertView release];
-	}
+	)
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
